@@ -1,0 +1,39 @@
+.filters-wrap {
+
+    .ant-form {
+        display: flex;
+        flex-wrap: wrap;
+
+        .ant-form-item {
+            margin-right: 10px;
+        }
+    }
+
+}
+
+.ant-select-selector {
+    border-radius: $radius !important;
+}
+
+@media screen and (max-width:767px) {
+    .filters-wrap {
+        .ant-form {
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .ant-form-item {
+                width: 47% !important;
+                margin: 0px !important;
+
+                .ant-select {
+                    width: 100% !important;
+                }
+            }
+
+            button[type="submit"] {
+                width: 47%;
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.auth-wrap {
+    display: flex;
+    background-color: #FFF;
+
+    .left-col {
+        width: 400px;
+        flex-shrink: 0;
+        background-color: #000;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h3 {
+            color: #FFF;
+            font-weight: 400;
+            max-width: 300px;
+            margin: 40px auto 0 auto;
+        }
+    }
+
+    .right-col {
+        padding: 50px;
+        width: 100%;
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            p {
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+}
+
+.auth-form-wrap {
+    max-width: 500px;
+    margin: auto;
+}
+
+.header-auth {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:767px) {
+
+    .auth-wrap {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+
+        .left-col {
+            width: 90%;
+            height: fit-content;
+            padding: 30px 10px;
+            border-radius: 20px;
+            margin-top: 20px;
+
+            h3 {
+                font-size: 17px;
+                max-width: 100%;
+                margin-top: 20px;
+            }
+        }
+
+        .right-col {
+            width: 90%;
+            padding: 30px 232px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            background-color: #FFF;
+
+            .section-title {
+                margin-bottom: 20px !important;
+            }
+
+            .header {
+                margin-top: 20px;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+    }
+
+    .auth-form-wrap {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+}

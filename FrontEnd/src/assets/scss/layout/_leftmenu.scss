@@ -1,0 +1,44 @@
+ul#ant-sidemenu {
+    border: none;
+    background-color: transparent;
+
+    .ant-menu-item {
+        padding-left: 10px !important;
+        height: 26px;
+
+        svg {
+            width: 14px !important;
+        }
+
+        .ant-menu-title-content {
+            font-size: 14px;
+        }
+    }
+
+    .ant-menu-sub {
+        background-color: transparent;
+    }
+
+    .ant-menu-submenu {
+        .ant-menu-item {
+            padding-left: 32px !important;
+        }
+
+        .ant-menu-submenu-title {
+            height: 26px;
+            padding-left: 10px !important;
+
+            .ant-menu-submenu-arrow {
+                color: #a9a8a8 !important;
+            }
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width:767px) {
+ 
+     
+}

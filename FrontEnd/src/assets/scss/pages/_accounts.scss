@@ -1,0 +1,12 @@
+.aa_box_title {
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 10px;
+    text-align: center;
+    border-radius: $radius;
+    margin-bottom: 20px;
+    background-color: #F0F4F9;
+
+    p {
+        color: rgba(0,0,0,0.6);
+    }
+}

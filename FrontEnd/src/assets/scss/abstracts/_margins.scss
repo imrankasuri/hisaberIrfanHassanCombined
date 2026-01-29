@@ -1,0 +1,104 @@
+@mixin simpleSpace {
+
+  // margin and padding values
+  $spacings: (
+    0,
+    .25rem,
+    .5rem,
+    1rem,
+    1.5rem,
+    2rem,
+    ) !default;
+
+  // margin and padding shorthand prefixes
+  $prefixes: (
+    p: padding,
+    px: (padding-left, padding-right),
+    py: (padding-top, padding-bottom),
+
+    pt: padding-top,
+    pr: padding-right,
+    pb: padding-bottom,
+    pl: padding-left,
+
+    m: margin,
+    mx: (margin-left, margin-right),
+    my: (margin-top, margin-bottom),
+
+    mt: margin-top,
+    mr: margin-right,
+    mb: margin-bottom,
+    ml: margin-left,
+    ) !default;
+
+  // // Loop generating all spacing styles
+  // @each $attr-short, $attr-list in $prefixes {
+  //   @each $space in $spacings {
+  //     .#{$attr-short}-#{ index(($spacings), $space)-1 } {
+  //       @each $attr in $attr-list {
+  //         #{$attr}: #{$space} !important;
+  //       }
+  //     }
+  //   }
+  // }
+  
+  // Loop generating all spacing styles
+  @each $attr-short, $attr-list in $prefixes {
+    @each $space in $spacings {
+      .#{$attr-short}-#{ index(($spacings), $space)-1 } {
+        @each $attr in $attr-list {
+          #{$attr}: #{$space} !important;
+        }
+      }
+
+      // Generate responsive classes
+      @media (min-width: 576px) {
+        .#{$attr-short}-sm-#{ index(($spacings), $space)-1 } {
+          @each $attr in $attr-list {
+            #{$attr}: #{$space} !important;
+          }
+        }
+      }
+
+      @media (min-width: 768px) {
+        .#{$attr-short}-md-#{ index(($spacings), $space)-1 } {
+          @each $attr in $attr-list {
+            #{$attr}: #{$space} !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include simpleSpace(
+);
+
+// Use the mixin without a media query (for default styles)
+@include simpleSpace();
+
+// Add media queries for Bootstrap-like breakpoints
+// Small screens (sm)
+@media (max-width: 575.98px) {
+  @include simpleSpace();
+}
+
+// Medium screens (md)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  @include simpleSpace();
+}
+
+// Large screens (lg)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  @include simpleSpace();
+}
+
+// Extra-large screens (xl)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  @include simpleSpace();
+}
+
+// Extra-large screens (xxl) - Customize this breakpoint as needed
+@media (min-width: 1200px) {
+  @include simpleSpace();
+}

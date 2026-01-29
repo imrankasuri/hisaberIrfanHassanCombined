@@ -1,0 +1,164 @@
+// Text Alignment
+.text-center {
+    text-align: center;
+  }
+  
+  .text-start {
+    text-align: start;
+  }
+  
+  .text-end {
+    text-align: end;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-justify {
+    text-align: justify;
+  }
+  
+  // Breakpoint-specific Text Alignment
+  @media (min-width: 576px) {
+    .text-sm-center {
+      text-align: center;
+    }
+    .text-sm-start {
+      text-align: start;
+    }
+    .text-sm-end {
+      text-align: end;
+    }
+    .text-sm-left {
+      text-align: left;
+    }
+    .text-sm-right {
+      text-align: right;
+    }
+    .text-sm-justify {
+      text-align: justify;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .text-md-center {
+      text-align: center;
+    }
+    .text-md-start {
+      text-align: start;
+    }
+    .text-md-end {
+      text-align: end;
+    }
+    .text-md-left {
+      text-align: left;
+    }
+    .text-md-right {
+      text-align: right;
+    }
+    .text-md-justify {
+      text-align: justify;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .text-lg-center {
+      text-align: center;
+    }
+    .text-lg-start {
+      text-align: start;
+    }
+    .text-lg-end {
+      text-align: end;
+    }
+    .text-lg-left {
+      text-align: left;
+    }
+    .text-lg-right {
+      text-align: right;
+    }
+    .text-lg-justify {
+      text-align: justify;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .text-xl-center {
+      text-align: center;
+    }
+    .text-xl-start {
+      text-align: start;
+    }
+    .text-xl-end {
+      text-align: end;
+    }
+    .text-xl-left {
+      text-align: left;
+    }
+    .text-xl-right {
+      text-align: right;
+    }
+    .text-xl-justify {
+      text-align: justify;
+    }
+  }
+  
+  // Responsive Display Utilities
+  .visible {
+    display: block !important;
+  }
+  
+  .invisible {
+    display: none !important;
+  }
+  
+  @media (max-width: 575px) {
+    .visible-xs {
+      display: block !important;
+    }
+    .invisible-xs {
+      display: none !important;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .visible-sm {
+      display: block !important;
+    }
+    .invisible-sm {
+      display: none !important;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .visible-md {
+      display: block !important;
+    }
+    .invisible-md {
+      display: none !important;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .visible-lg {
+      display: block !important;
+    }
+    .invisible-lg {
+      display: none !important;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .visible-xl {
+      display: block !important;
+    }
+    .invisible-xl {
+      display: none !important;
+    }
+  }
+  
