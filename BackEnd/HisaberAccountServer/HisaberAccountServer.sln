@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HisaberAccountServer", "HisaberAccountServer.csproj", "{E372214E-9665-86A8-F4CF-EC669073781F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E372214E-9665-86A8-F4CF-EC669073781F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E372214E-9665-86A8-F4CF-EC669073781F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E372214E-9665-86A8-F4CF-EC669073781F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E372214E-9665-86A8-F4CF-EC669073781F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49AE2E53-4FF0-4A90-A27C-3F0A622ABFDF}
+	EndGlobalSection
+EndGlobal

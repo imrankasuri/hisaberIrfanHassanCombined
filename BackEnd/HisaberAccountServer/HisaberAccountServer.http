@@ -1,0 +1,6 @@
+@HisaberAccountServer_HostAddress = http://localhost:5269
+
+GET {{HisaberAccountServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
